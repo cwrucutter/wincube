@@ -1,1 +1,0 @@
-/usr/bin/c++   -O2 -g     -pthread CMakeFiles/teleop_win.dir/src/teleop_joy.o  -o ../bin/teleop_win -rdynamic -L/opt/ros/fuerte/lib -lroscpp -lrostime -lrosconsole -lroscpp_serialization -lxmlrpcpp -lrosbag -Wl,-rpath,/opt/ros/fuerte/lib 
