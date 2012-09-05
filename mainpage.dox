@@ -1,0 +1,20 @@
+/**
+\mainpage
+\htmlinclude manifest.html
+
+\b wincube
+
+
+The wincube is a repurposed carboard box. It is now a robot.
+
+Using rosserial and an arduino, Commands are piped to the robot at 10Hz. 
+The robot can send back sensor data over the same link. Immediately, we need a bigger pipe.
+
+<!-- 
+Provide an overview of your package.
+-->
+
+-->
+
+
+*/

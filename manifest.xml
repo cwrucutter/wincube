@@ -1,0 +1,17 @@
+<package>
+  <description brief="wincube">
+
+     wincube: a repurposed cardboard box full of win.
+
+  </description>
+  <author>chully</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/wincube</url>
+  <depend package="roscpp"/>
+  <depend package="joy"/>
+  <depend package="rosserial_python"/>
+
+</package>
+
+

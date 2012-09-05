@@ -1,0 +1,21 @@
+<launch>
+
+ <!-- joy node -->
+  <node respawn="true" pkg="joy" type="joy" name="my_joy" >
+    <param name="dev" type="string" value="/dev/input/js0" />
+    <param name="deadzone" value="0.12" />
+  </node>
+
+ <!-- throttle -->
+  <node respawn="true" pkg="topic_tools" type="throttle" name="joy_throttler"
+  	args="messages /joy 10 /throttled_joy" />
+
+ <!-- teleop -->
+  <param name="leftaxis" value="1" type="int"/>
+  <param name="rightaxis" value="4" type="int"/>
+  <node pkg="wincube" type="teleop_win" name="teleop_win"/>
+
+ <!-- Serial -->
+  <node pkg="rosserial_python" type="serial_node.py" name="SIRL" args="/dev/ttyUSB0"/>
+
+</launch>
